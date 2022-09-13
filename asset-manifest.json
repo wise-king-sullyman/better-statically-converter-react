@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.4d86a5db.js",
-    "static/js/787.882ed691.chunk.js": "/static/js/787.882ed691.chunk.js",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.4d86a5db.js.map": "/static/js/main.4d86a5db.js.map",
-    "787.882ed691.chunk.js.map": "/static/js/787.882ed691.chunk.js.map"
+    "main.css": "/better-statically-converter-react/static/css/main.073c9b0a.css",
+    "main.js": "/better-statically-converter-react/static/js/main.77e39a1a.js",
+    "static/js/787.882ed691.chunk.js": "/better-statically-converter-react/static/js/787.882ed691.chunk.js",
+    "index.html": "/better-statically-converter-react/index.html",
+    "main.073c9b0a.css.map": "/better-statically-converter-react/static/css/main.073c9b0a.css.map",
+    "main.77e39a1a.js.map": "/better-statically-converter-react/static/js/main.77e39a1a.js.map",
+    "787.882ed691.chunk.js.map": "/better-statically-converter-react/static/js/787.882ed691.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.4d86a5db.js"
+    "static/js/main.77e39a1a.js"
   ]
 }
