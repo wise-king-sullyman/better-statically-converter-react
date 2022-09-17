@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Title, TitleSizes } from "@patternfly/react-core";
 import { Input, LinkDisplay } from "./components";
 interface info {
   owner: string;
@@ -73,6 +73,9 @@ function App() {
   return (
     <div className="App">
       <div className="limit-width">
+      <Title headingLevel="h1" size={TitleSizes['4xl']}>
+      Merge Commit Link:
+    </Title>
         <Input
           value={inputValue}
           onChange={(value) => setInputValue(value)}
