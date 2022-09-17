@@ -15,18 +15,25 @@ export interface LinkDisplayProps {
 export function LinkDisplay({ links }: LinkDisplayProps) {
   const [selectedLink, setSelectedLink] = useState("");
 
-  function copyToClipboard(link: string) {
+  function handleClipboardCopySuccess(link: string) {
+    setSelectedLink(link);
+    setTimeout(() => setSelectedLink(""), 3000);
+  }
+
+  function handleClipboardCopyFailure(error: any) {
+    console.error(error);
+  }
+
+  async function copyToClipboard(link: string) {
     if (!navigator.clipboard) {
       console.log("Clipboard API not available");
       return;
     }
 
-    try {
-      navigator.clipboard.writeText(link);
-      setSelectedLink(link);
-    } catch (error) {
-      console.error(error);
-    }
+    await navigator.clipboard.writeText(link).then(
+      () => handleClipboardCopySuccess(link),
+      (error) => handleClipboardCopyFailure(error)
+    );
   }
 
   const menuItems = links?.map((link) => {
