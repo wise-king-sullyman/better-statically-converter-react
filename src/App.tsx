@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import { Menu, TextInputGroup, TextInputGroupMain } from "@patternfly/react-core";
 
 interface info {
   owner: string;
@@ -65,21 +65,17 @@ function App() {
 
     const links = filesWithPaths.map((file) => {
       const url = structureStaticallyLink(file);
-      return <li key={url}>{url}</li>
+      return <li key={url}>{url}</li>;
     });
     setLinks(links);
   }
 
-  
-
   return (
     <div className="App">
-      <input
-        value={inputValue}
-        onChange={(ev) => {
-          setInputValue(ev.target.value);
-        }}
-      />
+      <TextInputGroup>
+        <TextInputGroupMain value={inputValue}
+        onChange={value => setInputValue(value)} />
+      </TextInputGroup>
       <button onClick={() => createLinks()}>Submit</button>
       <ul>{links}</ul>
     </div>
