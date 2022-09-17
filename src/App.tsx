@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Title, TitleSizes } from "@patternfly/react-core";
 import { Input, LinkDisplay } from "./components";
 interface info {
@@ -26,6 +26,13 @@ interface githubFile {
 function App() {
   const [inputValue, setInputValue] = useState("");
   const [links, setLinks] = useState<string[]>();
+  const [valueSubmitted, setValueSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (valueSubmitted && !inputValue) {
+      setValueSubmitted(false);
+    }
+  }, [valueSubmitted, inputValue]);
 
   function parseGithubURL(commit: string) {
     const splitCommit = commit.split("/");
@@ -68,20 +75,21 @@ function App() {
       return url;
     });
     setLinks(links);
+    setValueSubmitted(true);
   }
 
   return (
     <div className="App">
       <div className="limit-width">
-      <Title headingLevel="h1" size={TitleSizes['4xl']}>
-      Merge Commit Link:
-    </Title>
+        <Title headingLevel="h1" size={TitleSizes["4xl"]}>
+          Merge Commit Link:
+        </Title>
         <Input
           value={inputValue}
           onChange={(value) => setInputValue(value)}
           onSubmit={() => createLinks()}
         />
-        <LinkDisplay links={links} />
+        {valueSubmitted && <LinkDisplay links={links} />}
       </div>
     </div>
   );
