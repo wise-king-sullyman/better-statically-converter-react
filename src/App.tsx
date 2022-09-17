@@ -72,12 +72,14 @@ function App() {
 
   return (
     <div className="App">
-      <Input
-        value={inputValue}
-        onChange={(value) => setInputValue(value)}
-        onSubmit={() => createLinks()}
-      />
-      <ul>{links}</ul>
+      <div className="limit-width">
+        <Input
+          value={inputValue}
+          onChange={(value) => setInputValue(value)}
+          onSubmit={() => createLinks()}
+        />
+        <ul>{links}</ul>
+      </div>
     </div>
   );
 }
