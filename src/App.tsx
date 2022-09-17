@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Menu, TextInputGroup, TextInputGroupMain } from "@patternfly/react-core";
 
+import { Input } from "./components";
 interface info {
   owner: string;
   repo: string;
@@ -72,11 +72,11 @@ function App() {
 
   return (
     <div className="App">
-      <TextInputGroup>
-        <TextInputGroupMain value={inputValue}
-        onChange={value => setInputValue(value)} />
-      </TextInputGroup>
-      <button onClick={() => createLinks()}>Submit</button>
+      <Input
+        value={inputValue}
+        onChange={(value) => setInputValue(value)}
+        onSubmit={() => createLinks()}
+      />
       <ul>{links}</ul>
     </div>
   );
