@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/better-statically-converter-react/static/css/main.efa63ae6.css",
-    "main.js": "/better-statically-converter-react/static/js/main.5b2cccfa.js",
+    "main.css": "/better-statically-converter-react/static/css/main.e5c26230.css",
+    "main.js": "/better-statically-converter-react/static/js/main.986fbf05.js",
     "static/css/753.4816587a.chunk.css": "/better-statically-converter-react/static/css/753.4816587a.chunk.css",
     "static/js/753.373dd1aa.chunk.js": "/better-statically-converter-react/static/js/753.373dd1aa.chunk.js",
     "static/css/796.8d1f98e5.chunk.css": "/better-statically-converter-react/static/css/796.8d1f98e5.chunk.css",
@@ -81,8 +81,8 @@
     "static/media/pficon.woff2": "/better-statically-converter-react/static/media/pficon.e888fa788db9794c334f.woff2",
     "static/media/status-icon-sprite.svg": "/better-statically-converter-react/static/media/status-icon-sprite.4fee9fefc3971799d2dd.svg",
     "index.html": "/better-statically-converter-react/index.html",
-    "main.efa63ae6.css.map": "/better-statically-converter-react/static/css/main.efa63ae6.css.map",
-    "main.5b2cccfa.js.map": "/better-statically-converter-react/static/js/main.5b2cccfa.js.map",
+    "main.e5c26230.css.map": "/better-statically-converter-react/static/css/main.e5c26230.css.map",
+    "main.986fbf05.js.map": "/better-statically-converter-react/static/js/main.986fbf05.js.map",
     "753.4816587a.chunk.css.map": "/better-statically-converter-react/static/css/753.4816587a.chunk.css.map",
     "753.373dd1aa.chunk.js.map": "/better-statically-converter-react/static/js/753.373dd1aa.chunk.js.map",
     "796.8d1f98e5.chunk.css.map": "/better-statically-converter-react/static/css/796.8d1f98e5.chunk.css.map",
@@ -92,7 +92,7 @@
     "787.882ed691.chunk.js.map": "/better-statically-converter-react/static/js/787.882ed691.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efa63ae6.css",
-    "static/js/main.5b2cccfa.js"
+    "static/css/main.e5c26230.css",
+    "static/js/main.986fbf05.js"
   ]
 }
