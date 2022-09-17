@@ -40,12 +40,8 @@ export function LinkDisplay({ links }: LinkDisplayProps) {
     const linkCopyStatus = link === selectedLink ? "Copied" : "Click to copy";
 
     return (
-      <Tooltip content={linkCopyStatus} position="left">
-        <MenuItem
-          key={link}
-          icon={<CopyIcon />}
-          onClick={() => copyToClipboard(link)}
-        >
+      <Tooltip content={linkCopyStatus} position="left" key={link}>
+        <MenuItem icon={<CopyIcon />} onClick={() => copyToClipboard(link)}>
           {link}
         </MenuItem>
       </Tooltip>
