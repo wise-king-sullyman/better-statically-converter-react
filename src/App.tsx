@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Input } from "./components";
+import { Input, LinkDisplay } from "./components";
 interface info {
   owner: string;
   repo: string;
@@ -25,7 +25,7 @@ interface githubFile {
 
 function App() {
   const [inputValue, setInputValue] = useState("");
-  const [links, setLinks] = useState<JSX.Element[]>();
+  const [links, setLinks] = useState<string[]>();
 
   function parseGithubURL(commit: string) {
     const splitCommit = commit.split("/");
@@ -65,7 +65,7 @@ function App() {
 
     const links = filesWithPaths.map((file) => {
       const url = structureStaticallyLink(file);
-      return <li key={url}>{url}</li>;
+      return url;
     });
     setLinks(links);
   }
@@ -78,7 +78,7 @@ function App() {
           onChange={(value) => setInputValue(value)}
           onSubmit={() => createLinks()}
         />
-        <ul>{links}</ul>
+        <LinkDisplay links={links} />
       </div>
     </div>
   );
