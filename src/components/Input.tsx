@@ -13,12 +13,11 @@ export interface InputProps {
   onSubmit: () => void;
 }
 
-export function Input({
-  value,
-  onChange,
-  onSubmit,
-}: InputProps) {
-  const showClearButton = value !== "";
+export function Input({ value, onChange, onSubmit }: InputProps) {
+  const hasValue = value !== "";
+  const hintText = hasValue
+    ? "https://github.com/"
+    : "https://github.com/owner/repo/commit/commit_hash";
 
   function handleEnter() {
     if (!value) {
@@ -55,9 +54,10 @@ export function Input({
         value={value}
         onChange={(value) => onChange(value)}
         onKeyDown={handleTextInputKeyDown}
+        hint={hintText}
       />
       <TextInputGroupUtilities>
-        {showClearButton && (
+        {hasValue && (
           <Button
             variant="plain"
             onClick={clearInput}
