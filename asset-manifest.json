@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/better-statically-converter-react/static/css/main.e46c22e8.css",
-    "main.js": "/better-statically-converter-react/static/js/main.ee0516b2.js",
+    "main.css": "/better-statically-converter-react/static/css/main.d0160a8f.css",
+    "main.js": "/better-statically-converter-react/static/js/main.b788e111.js",
     "static/css/753.4816587a.chunk.css": "/better-statically-converter-react/static/css/753.4816587a.chunk.css",
     "static/js/753.373dd1aa.chunk.js": "/better-statically-converter-react/static/js/753.373dd1aa.chunk.js",
     "static/css/796.8d1f98e5.chunk.css": "/better-statically-converter-react/static/css/796.8d1f98e5.chunk.css",
@@ -91,8 +91,8 @@
     "static/media/pficon.woff2": "/better-statically-converter-react/static/media/pficon.e888fa788db9794c334f.woff2",
     "static/media/status-icon-sprite.svg": "/better-statically-converter-react/static/media/status-icon-sprite.4fee9fefc3971799d2dd.svg",
     "index.html": "/better-statically-converter-react/index.html",
-    "main.e46c22e8.css.map": "/better-statically-converter-react/static/css/main.e46c22e8.css.map",
-    "main.ee0516b2.js.map": "/better-statically-converter-react/static/js/main.ee0516b2.js.map",
+    "main.d0160a8f.css.map": "/better-statically-converter-react/static/css/main.d0160a8f.css.map",
+    "main.b788e111.js.map": "/better-statically-converter-react/static/js/main.b788e111.js.map",
     "753.4816587a.chunk.css.map": "/better-statically-converter-react/static/css/753.4816587a.chunk.css.map",
     "753.373dd1aa.chunk.js.map": "/better-statically-converter-react/static/js/753.373dd1aa.chunk.js.map",
     "796.8d1f98e5.chunk.css.map": "/better-statically-converter-react/static/css/796.8d1f98e5.chunk.css.map",
@@ -112,7 +112,7 @@
     "787.882ed691.chunk.js.map": "/better-statically-converter-react/static/js/787.882ed691.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e46c22e8.css",
-    "static/js/main.ee0516b2.js"
+    "static/css/main.d0160a8f.css",
+    "static/js/main.b788e111.js"
   ]
 }
