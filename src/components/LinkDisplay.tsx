@@ -4,9 +4,10 @@ import {
   MenuContent,
   MenuList,
   MenuItem,
-  Tooltip,
+  Tooltip
 } from "@patternfly/react-core";
 import { CopyIcon } from "@patternfly/react-icons";
+import { Truncate } from "./Truncate";
 
 export interface LinkDisplayProps {
   links?: string[];
@@ -42,7 +43,7 @@ export function LinkDisplay({ links }: LinkDisplayProps) {
     return (
       <Tooltip content={linkCopyStatus} position="left" key={link}>
         <MenuItem icon={<CopyIcon />} onClick={() => copyToClipboard(link)}>
-          {link}
+          <Truncate content={link} trailingNumChars={50} position="middle" />
         </MenuItem>
       </Tooltip>
     );
