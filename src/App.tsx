@@ -79,7 +79,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App center">
       <div className="limit-width">
         <Title headingLevel="h1" size={TitleSizes["4xl"]}>
           Merge Commit Link:
